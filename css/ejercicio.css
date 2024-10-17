@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+body {
+    font-family: Roboto;
+    padding: 0;
+    margin: 0;
+    background-color: blanchedalmond;
+}
+
+header {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.logomobile{
+    display: none;
+}
+header nav {
+    justify-self: end;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+}
+
+section figure {
+    display: grid;
+    background: #00450e;
+}
+
+section figure img {
+    width: 100%;
+}
+
+section figure figcaption {
+    color: #fff;
+    text-align: center;
+    padding-top: 0.8%;
+    padding-bottom: 0.6%;
+}
+
+aside h2 {
+    color: #00450e;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+article h1 {
+    color: #00450e;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    min-height: 10rem;
+    background: url('../img/fresas.webp');
+    background-size: cover;
+}
+
+footer p {
+    color: #00450e;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10rem;
+}
+
+@media (max-width: 740px) {
+    body{
+       max-width: 100%;
+       
+      
+    }
+    .logodesktop{
+        display: none;
+    }
+    .logomobile {
+        display: block;
+         }
+    .logomobile img{
+        max-width: 70%;
+        margin: 0 2rem;
+    }
+    .menutop {
+        display: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section aside {
+        margin: 3rem 2rem;
+    }
+
+    section aside h2 {
+        margin: auto 1rem;
+    }
+
+    section article {
+        margin: 3rem 2rem;
+    }
+
+    section article h1 {
+        margin: auto 2rem;
+        font-size: 1.8rem;
+    }
+
+    footer {
+        display: block;
+        block-size: 1rem;
+        background-size: 160%;
+        margin-bottom: 0;
+    }
+
+    footer p {
+        padding: 5rem;
+    }
+
+}

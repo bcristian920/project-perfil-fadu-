@@ -1,0 +1,332 @@
+body {
+  background-color: #020814;
+text-align: center;
+  font-family: "Oswald", sans-serif;
+
+}
+
+
+header {
+  padding: 0rem;
+  margin: 0rem;
+}
+
+/********menu de arriba**********/
+
+.linea {
+  margin-bottom: -1rem;
+  width: 100%;
+  border: none;
+  border-top: 2px solid #f94d;
+
+}
+
+nav {
+  display: flex;
+ justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0rem 1rem;
+  padding: 1.5rem 1rem;
+  list-style: none;
+  background: linear-gradient(335deg, #00000030 0%, #ffffff05 100%);
+  border-radius: 0rem 0rem 1rem 1rem;
+  border: 0.1rem outset #f94d;
+  box-shadow: 0px -2px 25px #db7d3f80;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav ul li:hover {
+  box-shadow: 0px 0px 80px 10px #f94d;
+}
+
+nav ul li a:hover {
+  color: #f94d;
+}
+
+
+
+.linea1 {
+  margin: 2rem 0;
+  width: 100%;
+  border: none;
+  border-top: 2px solid #f94d;
+}
+
+/********DATOS DE PERFIL**********/
+
+/*TODOS LOS H2*/
+h2 {
+  font-size: 4rem;
+  color: #f94d;
+  margin: 2rem;
+  text-align: center;
+}
+
+/*FONDO DEL ARTICULO DEL PERFIL*/
+.perfil {
+  background-color: #020814;
+  text-align: center;
+  border-radius: 2rem;
+  margin: 0 10rem;
+  box-shadow: 0px 0px 90px 30px #041944;
+}
+
+.fondoperfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+
+}
+
+/* IMAGEN DE PERFIL*/
+.foto-perfil {
+  max-width: 50%;
+  margin: 2rem;
+  border-radius: 100%;
+  border: 0 solid;
+  box-shadow: 0px 0px 80px 10px #1e4daa;
+}
+
+/* ENLACES */
+.enlaces {
+  list-style: none;
+}
+
+.enlaces li {
+  display: inline-block;
+}
+
+.enlaces a {
+  font-size: 2rem;
+  display: inline-block;
+  inline-size: 3rem;
+  color: #fff;
+  text-align: center;
+}
+
+.enlaces a:hover {
+  color: #f94d;
+}
+
+/*TODOS LOS H3*/
+h3 {
+  color: #fFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+
+}
+
+/******MATERIASS******/
+.materias-fondo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+}
+
+.materias-fondo article {
+  align-items: center;
+  background-color: #020814;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 70px 10px #041944;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.materias-fondo article ul {
+  list-style: none;
+  text-align: center;
+  margin: 0 1rem;
+  padding: 1rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+
+
+}
+
+
+/***********NOSOTROS***************/
+.perfiles {
+  display: grid;
+  align-content: center;
+}
+
+.perfiles article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfiles article figure {
+  padding: 0.2rem;
+  display: grid;
+  max-width: 300px;
+  background-color: #020814;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 70px 10px #041944;
+  border-radius: 10%;
+  margin: 20px;
+
+}
+
+
+.perfiles article figure figcaption {
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.avatar {
+  border-radius: 10% 10% 0 0;
+  max-width: 100%;
+}
+
+/**********DATOS ACADEMICOS************/
+
+section-2 {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin-left: 10rem;
+  margin-bottom: -3rem;
+}
+
+section-2 article {
+  text-align: left;
+}
+
+section-2 article ul {
+  width: 20rem;
+  list-style: none;
+  color: #fFF;
+  font-family: "Montserrat", sans-serif;
+}
+
+.titulo {
+  font-weight: bold;
+  display: table;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+/*********El FOOTER***********/
+footer {
+
+  padding: 44px;
+  text-align: center;
+}
+
+#footer {
+  color: #f94d;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+
+
+
+/*************ACA EMPIEZA RESPONSIVE****************/
+
+@media (max-width: 740px) {
+
+  body {
+    max-width: 100%;
+
+  }
+  nav{
+    align-items: center;
+    margin-bottom: -2rem;
+  }
+nav ul{
+  display: flex;
+  transform: scale(65%);
+ align-content: center;
+}
+nav ul li{
+  padding: 1rem 0.5rem;
+  margin: 0rem 0.4rem;
+
+}
+  .perfil {
+    margin: 0 3rem;
+  }
+  
+  .foto-perfil{
+    max-width: 100%;
+    margin: 0;
+  }
+  
+  h2 {
+    font-size: 2rem;
+
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .enlaces {
+  display: flex;
+  }
+
+  .enlaces a {
+    text-align: center;
+    font-size: 1.2rem;
+    inline-size: 1.8rem;
+  }
+
+  .materias-fondo {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .materias-fondo article {
+    text-align: center;
+    margin: 1rem 4.5rem;
+  }
+
+  .materias-fondo article ul {
+    padding: 0.5rem;
+  }
+
+  .materias-fondo article ul li {
+    font-size: 0.7rem;
+  }
+
+  .perfiles article {
+    display: inline-block;
+    grid-template-columns: auto;
+    margin:auto;
+  }
+
+  section-2 {
+    display: inline;
+    font-size: 0.6rem;
+    text-align: center;
+  }
+
+  #footer {
+    font-size: 50%;
+  }
+  iframe{
+    max-width: 100%;
+    
+  }
+}
